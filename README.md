@@ -4,7 +4,9 @@ This repository demonstrates an issue with Clerk's `externalAccounts` field wher
 
 ## The Issue
 
-When fetching a user via `clerkClient.users.getUser()`, the `externalAccounts[].id` field returns IDs prefixed with `idn_` instead of the expected `eac_` prefix. When inspecting the JSON of this particular user on the dashboard, it does show the `eac_` prefix for the external account, meaning the SDK does not retreive the correct ID:
+When fetching a user via `clerkClient.users.getUser()`, the `externalAccounts[].id` field returns IDs prefixed with `idn_` instead of the expected `eac_` prefix. When inspecting the JSON of this particular user on the dashboard, it does show the `eac_` prefix for the external account, meaning the SDK does not retreive the correct ID.
+
+### Dashboard JSON:
 
 ```
 {
@@ -22,7 +24,7 @@ When fetching a user via `clerkClient.users.getUser()`, the `externalAccounts[].
 }
 ```
 
-## Test Result
+### Test Result
 
 ```
 index.test.ts:
