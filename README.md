@@ -1,6 +1,6 @@
 # Clerk External Account ID Bug Reproduction
 
-This repository demonstrates an issue with Clerk's `externalAccounts` field where the account IDs have an unexpected prefix.
+This repository demonstrates an issue with Clerk's `externalAccounts` field where the account IDs have an unexpected prefix. Issue: https://github.com/clerk/javascript/issues/7584
 
 ## The Issue
 
